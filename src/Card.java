@@ -19,7 +19,7 @@ public class Card
     {
         return suit;
     }
-
+    //I fail to understand why sets are needed, but here they are as required by the interface
     public void setSuit(int suit)
     {
         this.suit = suit;
@@ -37,6 +37,7 @@ public class Card
 
     public String toString()
     {
+        //the value is passed to the array so we can print the actual value stored in the index and not the index itself
         return "Card = " + FACES[face] + " of " + SUITS[suit];
     }
 }
